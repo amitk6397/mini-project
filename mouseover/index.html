@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over Project</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xpos,.ypos {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+h4 {
+    position: absolute;
+    top: -40%;
+    left: 20%;
+}
+
+#xpos-value, #ypos-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="xpos">
+            <h4 class="xpos-header"> 
+                Mouse X Position:
+            </h4>
+            <span id="xpos-value">0</span>
+        </div>
+        <div class="ypos">
+            <h4 class="ypos-header">
+                Mouse Y Position:
+            </h4>
+            <span id="ypos-value">0</span>
+        </div>
+    </div>
+
+    <script
+        src="script.js"
+    ></script>
+</body>
+</html>
